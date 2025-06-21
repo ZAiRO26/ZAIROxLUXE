@@ -200,9 +200,9 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
-              <a href="#" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className={`text-2xl font-bold ${isScrolled || activePage !== 'home' ? 'text-black' : 'text-white'}`}>
+              <button onClick={() => handleNavClick('home')} className={`text-2xl font-bold ${isScrolled || activePage !== 'home' ? 'text-black' : 'text-white'} bg-transparent border-none p-0 cursor-pointer`}>
                 RAANA
-              </a>
+              </button>
             </div>
 
             <div className="flex items-center space-x-4">

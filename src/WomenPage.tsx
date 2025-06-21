@@ -43,9 +43,9 @@ const WomenPage: React.FC<WomenPageProps> = ({ onBackClick }) => {
       <ul className="space-y-5">
         {subCategories.map((category) => (
           <li key={category}>
-            <a href="#" onClick={(e) => e.preventDefault()} className="text-lg text-gray-800 hover:text-black">
+            <button onClick={(e) => e.preventDefault()} className="text-lg text-gray-800 hover:text-black bg-transparent border-none text-left w-full p-0">
               {category}
-            </a>
+            </button>
           </li>
         ))}
       </ul>
