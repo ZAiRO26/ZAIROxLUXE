@@ -1,0 +1,28 @@
+{
+  "name": "raana-luxury-fashion",
+  "version": "1.0.0",
+  "description": "Luxury Fashion E-commerce Platform",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../gucci-clone && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd gucci-clone && npm start",
+    "build": "cd gucci-clone && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "ecommerce",
+    "luxury",
+    "fashion",
+    "react",
+    "nodejs",
+    "mongodb",
+    "stripe"
+  ],
+  "author": "RAANA Development Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
